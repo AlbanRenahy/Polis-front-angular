@@ -26,5 +26,13 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+  "compilerOptions": {
+    "rootDir": "./src",
+    /* Experimental Options */
+    "experimentalDecorators": true, 
+    "emitDecoratorMetadata": true, 
+    /* Advanced Options */
+    "forceConsistentCasingInFileNames": true 
   }
 }
