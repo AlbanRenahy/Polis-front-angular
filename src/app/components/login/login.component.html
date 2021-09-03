@@ -1,0 +1,58 @@
+<div
+      class="login"
+    >
+      <div class="login-container">
+        <h1>
+          <img src="../../../assets/images/logo-saumon.png" alt="Polis" />
+        </h1>
+        <p class="login-container_subtitle">
+          En grec ancien πόλις <span>la cité</span>
+        </p>
+
+        <form action="">
+          <p>Vous devez vous identifier pour contribuer à Polis</p>
+          
+          <div>
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              (click)="handleFocus"
+              (blur)="handleBlur"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="password">Mot de passe</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Mot de passe"
+              (click)="handleFocus"
+              (blur)="handleBlur"
+            />
+          </div>
+
+          <p class="lost-password">
+            <a href="#">J'ai perdu</a> mon mot de passe
+          </p>
+
+          <button type="submit" class="inverted-colors">
+            Me connecter
+          </button>
+
+          <p>
+            Je souhaite <a href="">m'inscrire</a> et contribuer à Polis
+          </p>
+
+          <div class="ou-pin-div">
+            <p>ou</p>
+          </div>
+
+          <button type="submit">Entrer en simple visiteur</button>
+        </form>
+      </div>
+    </div>
