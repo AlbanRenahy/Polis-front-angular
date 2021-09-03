@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MapComponent } from './components/map/map.component';
 import { LoginComponent } from './components/login/login.component';
 import { SigninComponent } from './components/signin/signin.component';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
     LoginComponent,
-    SigninComponent
+    SigninComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
