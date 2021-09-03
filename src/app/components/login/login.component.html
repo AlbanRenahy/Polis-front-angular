@@ -9,7 +9,7 @@
           En grec ancien πόλις <span>la cité</span>
         </p>
 
-        <form action="">
+        <form action="" [formGroup]="formulaire" (ngSubmit)="envoyerFormulaire()">
           <p>Vous devez vous identifier pour contribuer à Polis</p>
           
           <div>
@@ -19,6 +19,7 @@
               id="email"
               name="email"
               placeholder="Email"
+              formControlName="email"
               (click)="handleFocus"
               (blur)="handleBlur"
             />
@@ -31,6 +32,7 @@
               id="password"
               name="password"
               placeholder="Mot de passe"
+              formControlName="password"
               (click)="handleFocus"
               (blur)="handleBlur"
             />
@@ -56,3 +58,4 @@
         </form>
       </div>
     </div>
+    <!-- Valeur du formulaire: {{formulaire.value | json}} -->

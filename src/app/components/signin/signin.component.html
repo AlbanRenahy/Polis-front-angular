@@ -9,7 +9,7 @@
           En grec ancien πόλις <span>la cité</span>
         </p>
 
-        <form action="">
+        <form action="" [formGroup]="formulaire" (ngSubmit)="envoyerFormulaire()">
           <div class="signin-container_names">
             <div>
               <label htmlFor="last-name">Nom</label>
@@ -18,6 +18,7 @@
                 id="last-name"
                 name="last-name"
                 placeholder="Nom"
+                formControlName="nom"
                 (onClick)="handleFocus"
                 (onBlur)="handleBlur"
               />
@@ -30,6 +31,7 @@
                 id="first-name"
                 name="first-name"
                 placeholder="Prénom"
+                formControlName="prenom"
                 (onClick)={handleFocus}
                 (onBlur)={handleBlur}
               />
@@ -43,6 +45,7 @@
               id="email"
               name="email"
               placeholder="Email"
+              formControlName="email"
               (onClick)={handleFocus}
               (onBlur)={handleBlur}
             />
@@ -54,6 +57,7 @@
               type="password"
               id="password"
               name="password"
+              formControlName="password"
               placeholder="Mot de passe"
               (onClick)={handleFocus}
               (onBlur)={handleBlur}
@@ -69,6 +73,7 @@
               id="password-confirm"
               name="password-confirm"
               placeholder="Confirmer votre mot de passe"
+              formControlName="passwordConfirm"
               (onClick)={handleFocus}
               (onBlur)={handleBlur}
             />
@@ -80,3 +85,4 @@
         </form>
       </div>
     </div>
+    <!-- Valeur du formulaire: {{formulaire.value | json}} -->

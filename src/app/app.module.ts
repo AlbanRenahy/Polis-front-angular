@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,12 +16,16 @@ import { LoadingComponent } from './components/loading/loading.component';
     MapComponent,
     LoginComponent,
     SigninComponent,
-    LoadingComponent
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    // Pour la boite à banane (et pour les template driven forms, ça ne se fait plus)
+    FormsModule,
+    // Module pour http (envois de requêttes)
   ],
   providers: [],
   bootstrap: [AppComponent]
