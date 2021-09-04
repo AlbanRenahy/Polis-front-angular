@@ -1,5 +1,6 @@
 .map-container {
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     right: 0;
@@ -13,3 +14,32 @@
   #map {
     height: 100%;
   }
+
+  /*Style du menu*/
+
+  .vertical-menu {
+    z-index:1;
+    margin-top:100px;
+    width: 150px; /* Set a width if you like */
+  }
+  
+  .vertical-menu a {
+    font-size: 1.2em;
+    background-color:white;
+    border: 1px solid black;
+    color: black; 
+    display: block; /* Make the links appear below each other */
+    padding: 12px; 
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active {
+    background-color: #04AA6D; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+
+  

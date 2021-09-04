@@ -6,8 +6,9 @@ import { MapComponent } from './components/map/map.component';
 
 const routes: Routes = [
   {path:"",component: LoginComponent,pathMatch:'full'},
-  {path:"login",component: LoginComponent,pathMatch:'full'},
-  {path:"map",component: MapComponent}
+  {path:"login",component: LoginComponent},
+  {path:"map",component: MapComponent},
+  {path:"signin",component: SigninComponent},
   
 ];
 
