@@ -9,6 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { BurgerNavComponent } from './components/burger-nav/burger-nav.component';
+import { MenuComponent } from './components/map/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BurgerNavComponent } from './components/burger-nav/burger-nav.component
     LoginComponent,
     SigninComponent,
     LoadingComponent,
-    BurgerNavComponent
+    BurgerNavComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
