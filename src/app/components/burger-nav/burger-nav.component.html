@@ -1,0 +1,16 @@
+<div id="burgernav">
+    <button (click)="toogleTag()" [ngClass]="showMe ? 'hamburger hamburger--elastic is-active' : 'hamburger hamburger--elastic'">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <nav *ngIf="showMe" [ngClass]="showMe ? 'content-menu open' : 'content-menu'">
+        <ul>
+            <a routerLink="/login">Connexion</a>
+            <a href="/signin">S'inscrire</a>
+            <a href="/apropos">A propos</a><!--component a creer-->
+            <a href="#">Contact</a><!--component a creer-->
+        </ul>
+    </nav>
+</div>
