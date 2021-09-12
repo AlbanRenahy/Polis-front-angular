@@ -8,6 +8,7 @@ import { MapComponent } from './components/map/map.component';
 import { LoginComponent } from './components/login/login.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { LoadingComponent } from './components/loading/loading.component';
+import { BurgerNavComponent } from './components/burger-nav/burger-nav.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LoadingComponent } from './components/loading/loading.component';
     MapComponent,
     LoginComponent,
     SigninComponent,
-    LoadingComponent
+    LoadingComponent,
+    BurgerNavComponent
   ],
   imports: [
     BrowserModule,

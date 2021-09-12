@@ -31,7 +31,8 @@ export class MapComponent implements AfterViewInit {
 
     this.map = L.map('map', {
       center: [parcThabor.lat, parcThabor.lng],
-      zoom: zoomLevel
+      zoom: zoomLevel,
+      zoomControl: false
     });
 
     const mainLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
