@@ -12,6 +12,7 @@ import { BurgerNavComponent } from './components/burger-nav/burger-nav.component
 import { MenuComponent } from './components/map/menu/menu.component';
 import { RenseignementDonneesComponent } from './components/map/renseignement-donnees/renseignement-donnees.component';
 import { ViewTogglerComponent } from './components/view-toggler/view-toggler.component';
+import { SuggestionsComponent } from './components/suggestions/suggestions.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ViewTogglerComponent } from './components/view-toggler/view-toggler.com
     BurgerNavComponent,
     MenuComponent,
     RenseignementDonneesComponent,
-    ViewTogglerComponent
+    ViewTogglerComponent,
+    SuggestionsComponent,
   ],
   imports: [
     BrowserModule,

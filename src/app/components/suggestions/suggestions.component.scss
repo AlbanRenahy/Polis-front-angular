@@ -1,0 +1,13 @@
+@import '../../../assets/vars.scss';
+
+#liste {
+  margin: 0;
+  min-height: 101.2vh; // Petit bug, à corriger..
+  background-color: $beige-lighten;
+}
+
+h1{
+    color: $brown-darken;
+    text-align: center;
+    padding-top: 10%;
+}
