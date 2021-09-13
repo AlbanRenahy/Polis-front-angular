@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BurgerNavComponent implements OnInit {
 
-  showMe:boolean=true
+  showMe:boolean=false
 
   constructor() { }
 
