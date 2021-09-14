@@ -9,6 +9,11 @@ import { LoginComponent } from './components/login/login.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { BurgerNavComponent } from './components/burger-nav/burger-nav.component';
+import { MenuComponent } from './components/map/menu/menu.component';
+import { RenseignementDonneesComponent } from './components/map/renseignement-donnees/renseignement-donnees.component';
+import { ViewTogglerComponent } from './components/view-toggler/view-toggler.component';
+import { SuggestionsComponent } from './components/suggestions/suggestions.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { BurgerNavComponent } from './components/burger-nav/burger-nav.component
     LoginComponent,
     SigninComponent,
     LoadingComponent,
-    BurgerNavComponent
+    BurgerNavComponent,
+    MenuComponent,
+    RenseignementDonneesComponent,
+    ViewTogglerComponent,
+    SuggestionsComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
