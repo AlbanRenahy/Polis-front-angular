@@ -13,6 +13,7 @@ import { MenuComponent } from './components/map/menu/menu.component';
 import { RenseignementDonneesComponent } from './components/map/renseignement-donnees/renseignement-donnees.component';
 import { ViewTogglerComponent } from './components/view-toggler/view-toggler.component';
 import { SuggestionsComponent } from './components/suggestions/suggestions.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SuggestionsComponent } from './components/suggestions/suggestions.compo
     RenseignementDonneesComponent,
     ViewTogglerComponent,
     SuggestionsComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
