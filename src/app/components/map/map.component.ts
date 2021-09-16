@@ -12,8 +12,9 @@ export class MapComponent implements AfterViewInit {
   // retrieve from https://gist.github.com/ThomasG77/61fa02b35abf4b971390
   smallIcon = new L.Icon({
     iconUrl: 'https://raw.githubusercontent.com/AlbanRenahy/Polis-front-angular/master/src/assets/images/Pins-2%2040_80.png',
-    iconSize:    [40, 80],
+    iconSize: [40, 80],
   });
+  showMe: boolean =true;
 
   constructor() { }
 
@@ -21,11 +22,15 @@ export class MapComponent implements AfterViewInit {
     this.createMap();
   }
 
+  toogleTag() {
+    this.showMe = !this.showMe
+  }
   createMap() {
     const parcThabor = {
       lat: 48.114384,
       lng: -1.669494,
     };
+
 
     const zoomLevel = 7;
 
@@ -54,7 +59,7 @@ export class MapComponent implements AfterViewInit {
     this.addMarker(popupOptions);
   }
 
-  addMarker({coords, text, open} : {coords:any, text:any, open:any}) {
+  addMarker({ coords, text, open }: { coords: any, text: any, open: any }) {
     const marker = L.marker([coords.lat, coords.lng], { icon: this.smallIcon });
     if (open) {
       marker.addTo(this.map).bindPopup(text).openPopup();
