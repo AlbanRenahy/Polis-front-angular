@@ -1,5 +1,8 @@
+@import '../../../assets/vars.scss';
+
 .map-container {
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     right: 0;
@@ -13,3 +16,26 @@
   #map {
     height: 100%;
   }
+
+  .leaflet-control-zoom-in,
+  .leaflet-control-zoom-out {
+    margin-top: 0;
+    color: $orange !important;
+  }
+
+  .leaflet-control-zoom{
+    position: bottomright;
+     border: 1px solid $orange !important;
+     border-radius: 10px !important;
+  }
+
+  .leaflet-control-zoom-out {
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+
+  .leaflet-control-zoom-in {
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+  }
+  
