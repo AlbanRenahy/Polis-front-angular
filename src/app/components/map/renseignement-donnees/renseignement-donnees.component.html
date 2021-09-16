@@ -1,6 +1,8 @@
-<div class='renseignement-donnees open'>
+<div *ngIf="showMe" [ngClass]= " showMe ? 'renseignement-donnees open' : 'renseignement-donnees_close'">
     <div class="renseignement-donnees_relative">
-        <a href="#" class="renseignement-donnees_close">Fermer</a>
+        <button (click)="toogleTag()" [ngClass]="showMe ? 'button' : 'null'">
+            Fermer
+        </button>
         <div class="renseignement-donnees_files">
             <label for="" class="picture-building"><img src="../../../../assets/images/Pins 40_80.png" alt="" class="renseignement-donnees_appareil"></label>
             <input type="file" id="picture-building" class="inputfile">
