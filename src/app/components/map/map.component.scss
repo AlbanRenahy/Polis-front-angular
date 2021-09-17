@@ -22,21 +22,11 @@ button {
   transform: translateX(-50%);
   height: 80px;
   width: 80px;
+  z-index: 10000;
+  position: absolute;
+  left:50%;
+  bottom:30px}
 
-  &>i.icons {
-    font-size: 2em;
-    transform: translateX(2px);
-  }
-
-  &:hover {
-    background-color: #ffffff !important;
-  }
-  ;z-index: 10000;
-   position: 
-   absolute;
-   left:50%;bottom:30px}
-
-   button span {}
 .map-container {
     position: absolute;
     z-index: -1;
