@@ -1,4 +1,4 @@
-<div  [hidden]="!showMe" class= 'renseignement-donnees open'>
+<div *ngIf="showMe" [ngClass]=" showMe ? 'renseignement-donnees open' : 'renseignement-donnees_close'">
     <div class="renseignement-donnees_relative">
         <button (click)="toogleTag()" [ngClass]="showMe ? 'button' : 'null'">
             Fermer
