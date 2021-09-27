@@ -15,10 +15,16 @@ export class MapComponent implements AfterViewInit {
     iconSize:    [40, 80],
   });
 
+  showMe: boolean = true;
+
   constructor() { }
 
   ngAfterViewInit(): void {
     this.createMap();
+  }
+
+  toogleTag() {
+    this.showMe = !this.showMe;
   }
 
   createMap() {
