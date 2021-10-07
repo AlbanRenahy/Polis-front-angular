@@ -16,8 +16,6 @@ import { ViewTogglerComponent } from './components/view-toggler/view-toggler.com
 import { SuggestionsComponent } from './components/suggestions/suggestions.component';
 import { AboutComponent } from './components/about/about.component';
 import { AdressSearchComponent } from './components/map/adress-search/adress-search.component';
-import { OneSuggestionComponent } from './components/suggestions/one-suggestion/one-suggestion/one-suggestion.component';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,15 +31,12 @@ import { HttpClientModule } from '@angular/common/http';
     SuggestionsComponent,
     AboutComponent,
     AdressSearchComponent,
-    OneSuggestionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    GooglePlaceModule,
-    HttpClientModule,
-
+    GooglePlaceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

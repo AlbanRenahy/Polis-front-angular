@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Lieu } from 'src/app/shared/models/lieu';
-import { LieuService } from 'src/app/shared/services/lieu.service';
 
 @Component({
   selector: 'app-suggestions',
@@ -8,14 +6,10 @@ import { LieuService } from 'src/app/shared/services/lieu.service';
   styleUrls: ['./suggestions.component.scss']
 })
 export class SuggestionsComponent implements OnInit {
-  lieux: Lieu[] = [];
 
-  constructor(private lieuService: LieuService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.lieuService.getAll().subscribe((lieux : Lieu[])=> {
-      this.lieux= lieux;
-    })
   }
 
 }
