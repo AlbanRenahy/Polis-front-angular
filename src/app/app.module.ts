@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,9 @@ import { RenseignementDonneesComponent } from './components/map/renseignement-do
 import { ViewTogglerComponent } from './components/view-toggler/view-toggler.component';
 import { SuggestionsComponent } from './components/suggestions/suggestions.component';
 import { AboutComponent } from './components/about/about.component';
+import { AdressSearchComponent } from './components/map/adress-search/adress-search.component';
+import { OneSuggestionComponent } from './components/suggestions/one-suggestion/one-suggestion/one-suggestion.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,11 +32,16 @@ import { AboutComponent } from './components/about/about.component';
     ViewTogglerComponent,
     SuggestionsComponent,
     AboutComponent,
+    AdressSearchComponent,
+    OneSuggestionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    GooglePlaceModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

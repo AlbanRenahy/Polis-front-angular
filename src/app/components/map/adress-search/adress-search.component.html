@@ -1,0 +1,8 @@
+
+<div class="adress-search">
+   <input ngx-google-places-autocomplete (onAddressChange)="handleAddressChange($event)" /><i class="fas fa-search"></i>
+  
+    <p>Adresse: {{ userAddress }}</p>
+    <p>Latitude: {{ userLatitude }}</p>
+    <p>Longitude: {{ userLongitude }}</p>
+  </div>
