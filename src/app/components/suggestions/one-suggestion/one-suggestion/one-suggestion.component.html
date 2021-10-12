@@ -8,7 +8,11 @@
                         <div class="card-body">
                             <h5 class="card-title">{{lieu.nomLieu}}</h5>
                             <h6 class="card-subtitle mb-2">Description {{lieu.description}}</h6>
-                            <h6 class="card-footer mb-1 text-muted">hehe</h6>
+
+                           
+                           <!--categorie a revoir-->
+                            <h6 class="card-footer mb-1 text-muted">Categories : {{lieu.categories[0].nomCategorie}}</h6>
+                            <h6 class="card-footer mb-1 text-muted">Temps de visite : {{lieu.tempsDeVisite.horaireVisite}}mn</h6>
                             <a href="#" class="btn btn-primary">View</a>
                         </div>
                     </div>
