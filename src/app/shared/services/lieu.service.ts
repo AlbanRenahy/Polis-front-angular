@@ -15,4 +15,8 @@ export class LieuService {
     return this.httpClient.get<Lieu[]>(`${environment.back_url}/lieux`);
     }
 
+  addOne(lieu: Lieu): Observable<Lieu> {
+    return this.httpClient.post<Lieu>(`${environment.back_url}/lieux`, lieu);
+    }
+
 }
