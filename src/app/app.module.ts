@@ -18,6 +18,8 @@ import { AboutComponent } from './components/about/about.component';
 import { AdressSearchComponent } from './components/map/adress-search/adress-search.component';
 import { OneSuggestionComponent } from './components/suggestions/one-suggestion/one-suggestion/one-suggestion.component';
 import { HttpClientModule } from '@angular/common/http';
+/** formulaires */
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     GooglePlaceModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
 
   ],
   providers: [],
