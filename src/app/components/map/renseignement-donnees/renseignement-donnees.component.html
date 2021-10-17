@@ -5,6 +5,13 @@
             <label for="" class="picture-building"><img src="../../../../assets/images/Pins 40_80.png" alt=""
                     class="renseignement-donnees_appareil"></label>
             <input type="file" id="picture-building" class="inputfile">
+            <div class="adress-search">
+                <input ngx-google-places-autocomplete (onAddressChange)="handleAddressChange($event)" /><i class="fas fa-search"></i>
+               
+                 <p>Adresse: {{ adresse }}</p>
+                 <p>Latitude: {{ latitude }}</p>
+                 <p>Longitude: {{ longitude }}</p>
+               </div>
         </div>
         <form [formGroup]="formulaire" (ngSubmit)="addOne()">
             <div class="renseignement-donnees_inputs">
@@ -13,18 +20,26 @@
                         formControlName="nomLieu">
                     <input type="text" class="input" id="ville" name="ville" placeholder="Ville"
                         formControlName="ville">
+                     <input type="text" class="input" id="latitude" name="latitude" value="{{ latitude }}"placeholder="latitude"
+                        formControlName="latitude">
+                        <input type="text" class="input" id="longitude" name="longitude" placeholder="longitude" value="{{ longitude }}"
+                        formControlName="longitude">
                 </div>
                 <div class="renseignement-donnees_address-container">
-                    <input type="text" id="addresse" name="addresse" placeholder="Adresse" formControlName="adresse">
+                    <input type="text" id="addresse" name="addresse" placeholder="Adresse" value="{{ adresse }}">
                 </div>
                 <div class="renseignement-donnees_secondary-infos">
                     <div class="input-container">
                         <!--<select name="visitTime" id="visitTime">
                             <option value={0} defaultValue>-Temps de visite estimé-</option>
                         </select>-->
-                        <select id="category" name="category" placeholder="Catégorie">
-                            <option value={0} defaultValue>Catégorie(s)</option>
-                           <!-- <option value={0}>{{categories[0].nomCategorie}}</option>-->
+                            <option value={0} defaultValue >Catégorie(s) </option>
+                            <select id="category" name="category" placeholder="Catégorie">
+   <option value={{categories[0].nomCategorie}}>{{categories[0].nomCategorie}}</option>
+   <option value={{categories[0].nomCategorie}}>{{categories[1].nomCategorie}}</option>
+   <option value={{categories[0].nomCategorie}}>{{categories[2].nomCategorie}}</option>
+   <option value={{categories[0].nomCategorie}}>{{categories[3].nomCategorie}}</option>
+                           
                             <!--TODO bug quand je parcours la liste a la main-->
                         </select>
                     </div>
