@@ -1,7 +1,11 @@
 <app-burger-nav></app-burger-nav>
 <app-view-toggler></app-view-toggler>
-<h1>Nous vous proposons les activités selon votre temps et vos envies</h1>
+<h1>Nous vous proposions les activités selon votre temps et vos envies</h1>
 <div id="liste">
     <app-one-suggestion [lieu]="lieu" *ngFor="let lieu of lieux"></app-one-suggestion>
 </div>
 
+<!--<button (click)="sortData()">Sort Data</button>
+    <div  *ngFor="let lieu of lieux">
+    {{lieux}}
+    </div>-->
