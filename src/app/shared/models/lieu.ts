@@ -1,4 +1,5 @@
 import { Categorie } from "./categorie";
+import { Image } from "./image";
 import { TempsDeVisite } from "./tempsDeVisite";
 
 
@@ -12,7 +13,8 @@ export interface Lieu {
     description : string;
     ville: string;
     note: string;
-    categories : Categorie[];
+    categorie : Categorie;
     tempsDeVisite : TempsDeVisite;
+    image : Image;
 }
 
